@@ -1944,7 +1944,7 @@ export const withdrawCommand: CommandModule = {
 // --- x402-pay ---
 export const x402PayCommand: CommandModule = {
   command: 'x402-pay',
-  describe: 'Call x402-protected resource (auto-pays 402)',
+  describe: 'Call x402-protected resource (preview by default)',
   builder: (yargs) =>
     withWriteFlags(
       withWalletAndChain(yargs)
